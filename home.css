@@ -877,12 +877,27 @@ footer{
         
     }
     .services .service-cards .cards{
-        margin: 50px 0;
-        width: 250px;
-        height: 300px;
+        margin: 30px 0;
+        width: 70%;
+        height: 200px;
         text-align: center;
-        font-size: 12px;
+        font-size: 8px;
+        background-color: #EDEEFF;
     }
+    .services .service-cards .cards .text{
+        /* margin: auto; */
+        padding: 0px 0x;
+    }
+    .services .service-cards .cards .text{
+        text-align: center;
+        color: #01052c;
+        font-weight: 300;
+        letter-spacing: 1.2px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px;
+    }
+    
     
     .second .cards{
         display: block;
@@ -891,10 +906,12 @@ footer{
         padding: 0;
        
     }
-    .second .cards .card{
-        width: 250px;
-        height: 150px;
+    .second .card{
+        width: 200px;
+        font-size: 10px;
     }
+    
+    
     footer{
         padding: 50px 20px;
     }
