@@ -908,9 +908,9 @@ footer{
     .services .service-cards .cards{
         margin: 30px 0;
         width: 100%;
-        height: 200px;
+        height: 250px;
         text-align: center;
-        font-size: 8px;
+        font-size: 12px;
         background-color: #EDEEFF;
     }
     .services .service-cards .cards .text{
@@ -944,13 +944,17 @@ footer{
     footer{
         padding: 50px 20px;
     }
-    .footer .footer-element{
+    .footer .image{
         margin: 20px;
+    }
+    
+    .footer .footer-element{
+        margin: 5px;
     }
     .footer .footer-element h2{
         color: #5a6484;
         margin-bottom: 20px;
-        font-size: 12px;
+        font-size: 16px;
         text-transform: uppercase;
         /* letter-spacing: 0.5px; */
         
@@ -959,13 +963,16 @@ footer{
         text-decoration: none;
         color: #FEFEFE;
         transition: 0.5s;
-        font-size: 9px;
+        font-size: 12px;
     }
     .footer .footer-element h3{
         font-size: 11px;
     }
     .footer .footer-element p{
         font-size: 9px;
+    }
+    .end h2{
+        font-size: 12px;
     }
     .sidebar {
         display: block;
