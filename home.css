@@ -878,8 +878,8 @@ footer{
     }
     .services .service-cards .cards{
         margin: 50px 0;
-        width: 300px;
-        height: 350px;
+        width: 250px;
+        height: 300px;
         text-align: center;
         font-size: 12px;
     }
@@ -892,8 +892,8 @@ footer{
        
     }
     .second .cards .card{
-        width: 300px;
-        height: 200px;
+        width: 250px;
+        height: 150px;
     }
     footer{
         padding: 50px 20px;
