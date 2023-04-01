@@ -140,7 +140,7 @@ body{
     display: flex;
     width: 100%;
     min-height: 100vh;
-    background-color: #4F6BF2;
+    /* background-color: #4F6BF2; */
 }
 
 /* bottom text */
@@ -150,7 +150,7 @@ body{
     position: relative;
     margin-left: 5%;
     margin-top: 5%;
-    background-color: aqua;
+    /* background-color: aqua; */
     /* width: 100%; */
     min-height: 500px;
      padding: 5px;
