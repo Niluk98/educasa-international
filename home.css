@@ -6,10 +6,12 @@
 }
 body{
     max-width: 100%;
+    /* position: absolute;
+    width: 100vw; */
 }
 .contain{
     position: relative;
-    min-width: 100%;
+    width: 100%;
     min-height: 120vh ;
     background: linear-gradient(to top, rgba(0,0,0,0.5)0%,rgba(0,0,0,0.5)0%), url(./Images/college-5757816_1920-c.jpg);
     background-size: cover;
@@ -149,7 +151,7 @@ body{
     margin-left: 5%;
     margin-top: 5%;
     /* background-color: aqua; */
-    width: 500px;
+    /* width: 100%; */
     min-height: 500px;
      padding: 5px;
     padding-bottom: 50px;
@@ -825,6 +827,9 @@ footer{
 }
 
 @media screen and (max-width:600px ){
+    body{
+        width: 100% !important;
+    }
     .contain{
         background-position: center;
     }
@@ -840,6 +845,27 @@ footer{
     .contain .bottom .text p{
         font-size: 16px;
     }
+    .contain nav .icon{
+   
+        padding: 10px;
+        position: fixed;
+        top: 4px;
+        right: 0%;
+        display: none;
+        color: #f7f7f7;
+        font-size: 2.5em;
+        z-index: 1;
+        display: none;
+        background-color: #01052c;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        border-radius: 30%;
+        height: 70px;
+        width: 70px;
+        cursor: pointer;
+    }
+    
     #advice{
         font-size: 25px;
     }
