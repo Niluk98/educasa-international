@@ -157,7 +157,7 @@ body{
 .contain .bottom .text h2{
     color:  #ffff;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 48px;
+    font-size: 40px;
     margin-top: 30px;
     margin-bottom: 40px;
 }
@@ -275,14 +275,15 @@ body{
 
 #advice #study{
     color: #f7f7f7;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 #advice span{
     color: #FFC75F;
+    font-size: 80px;
 }
 #tagline{
-    font-size: 2em;
+    font-size: 32px;
 }
 .services{
     position: relative;
@@ -828,10 +829,25 @@ footer{
         background-position: center;
     }
     .contain .bottom .text h2{
-        font-size: 40px;
+        font-size: 20px;
     }
     .contain .bottom .text h2 span{
-        font-size: 60px;
+        font-size: 25px;
+    }
+    #goals span{
+        font-size: 18px;
+    }
+    .contain .bottom .text p{
+        font-size: 16px;
+    }
+    #advice{
+        font-size: 25px;
+    }
+    #advice span{
+        font-size: 30px;
+    }
+    #tagline{
+        font-size: 5px;
     }
     nav ul{
         display: none;
