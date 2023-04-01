@@ -829,13 +829,13 @@ footer{
         background-position: center;
     }
     .contain .bottom .text h2{
-        font-size: 20px;
+        font-size: 18px;
     }
     .contain .bottom .text h2 span{
-        font-size: 25px;
+        font-size: 20px;
     }
     #goals span{
-        font-size: 18px;
+        font-size: 16px;
     }
     .contain .bottom .text p{
         font-size: 16px;
@@ -878,6 +878,10 @@ footer{
     }
     .services .service-cards .cards{
         margin: 50px 0;
+        width: 300px;
+        height: 350px;
+        text-align: center;
+        font-size: 12px;
     }
     
     .second .cards{
