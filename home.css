@@ -921,7 +921,7 @@ footer{
     .footer .footer-element h2{
         color: #5a6484;
         margin-bottom: 20px;
-        font-size: 15px;
+        font-size: 12px;
         text-transform: uppercase;
         /* letter-spacing: 0.5px; */
         
@@ -930,13 +930,13 @@ footer{
         text-decoration: none;
         color: #FEFEFE;
         transition: 0.5s;
-        font-size: 12px;
+        font-size: 9px;
     }
     .footer .footer-element h3{
-        font-size: 14px;
+        font-size: 11px;
     }
     .footer .footer-element p{
-        font-size: 12px;
+        font-size: 9px;
     }
     .sidebar {
         display: block;
