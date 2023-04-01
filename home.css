@@ -190,8 +190,8 @@ body{
     position: relative;
     margin-left: 80px;
     flex: 1;
-    margin:20px 20px;
-    /* margin-bottom: 20%; */
+    margin-right: 40px;
+    margin-top: 20px;
     width: 70%;
     height: 650px;
     opacity: 0.8;
