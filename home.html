@@ -20,14 +20,12 @@
   </head>
   <body>
     <div class="contain">
+
+
+      <!-- navbar -->
       <nav>
         <div class="logo">
-          <img
-            src="./Images/new.jpg"
-            alt=""
-            width="100%"
-            height="100%"
-          />
+          <img src="./Images/new.jpg" alt="" width="100%" height="100%" />
         </div>
 
         <ul>
@@ -63,7 +61,6 @@
               <li><a href="#">GRE</a></li>
               <li><a href="#">GMAT</a></li>
               <li><a href="#">Training at EDUCASA</a></li>
-              
             </ul>
           </li>
           <li>
@@ -75,38 +72,66 @@
               <li><a href="#">Study in UK</a></li>
               <li><a href="#">Study in Ireland</a></li>
               <li><a href="#">Study in New Zealand</a></li>
-              
             </ul>
           </li>
           <li><a href="#">Contact Us</a></li>
         </ul>
-        <div class="sidebar" id="sidebar" >
-
+        <div class="sidebar" id="sidebar">
           <div class="content">
             <a href="#">Home</a>
-            <a href="#">Study Abroad</a>
-            <a href="#">Our Services</a>
-            <a href="#">Test Preparation</a>
-            <a href="#">Study Destination</a>
+            <a href="#" onclick="display(1)">Study Abroad</a>
+            <a href="#" onclick="display(2)">Our Services</a>
+            <a href="#" onclick="display(3)">Test Preparation</a>
+            <a href="#" onclick="display(4)">Study Destination</a>
             <a href="#">Contact Us</a>
-
           </div>
-          
-            
-  
-          
-
         </div>
-        
-        <!-- <div class="search">
-          <input type="search" placeholder="Hello Guys" />
-          <button type="submit">Search</button>
-          
-        </div> -->
+
+        <div class="sidebar1" id="sidebar1">
+          <div class="content">
+            <a href="#">How to select your Study Location</a>
+            <a href="#">Advantages of International Study</a>
+            <a href="#">Study Abroad Admissions</a>
+            <a href="#">Parent Guide</a>
+          </div>
+        </div>
+        <div class="sidebar2" id="sidebar2">
+          <div class="content">
+            <a href="#">Career Counselling</a>
+            <a href="#">Accommodation Assistance</a>
+            <a href="#">University and Course Selection</a>
+            <a href="#">Visa Assistance</a>
+            <a href="#">Application Guidance</a>
+            <a href="#">Financial Assistance</a>
+            <a href="#">Pre Departure Assistance</a>
+            <a href="#">International Education Counselling</a>
+          </div>
+        </div>
+        <div class="sidebar3" id="sidebar3">
+          <div class="content">
+            <a href="#">TOEFL-IELTS-PTS</a>
+            <a href="#">GRE</a>
+            <a href="#">GMAT</a>
+            <a href="#">Training at EDUCASA</a>
+          </div>
+        </div>
+        <div class="sidebar4" id="sidebar4">
+          <div class="content">
+            <a href="#">Study in US</a>
+            <a href="#">Study in Canada</a>
+            <a href="#">Study in Australia</a>
+            <a href="#">Study in UK</a>
+            <a href="#">Study in Ireland</a>
+            <a href="#">Study in New Zealand</a>
+          </div>
+        </div>
+
         <div class="icon">
-          <i class="fa-solid fa-bars fa-xs" id="icon" onclick="display()"></i>
+          <i class="fa-solid fa-bars fa-xs" id="icon" onclick="display(0)"></i>
         </div>
       </nav>
+
+      <!-- navbar -->
 
       <div class="bottom">
         <div class="text">
@@ -427,10 +452,9 @@
 
     <div class="footer">
       <div class="image">
-          <img src="./Images/new.jpg" alt="" width="100%" height="100%">
+        <img src="./Images/new.jpg" alt="" width="100%" height="100%" />
       </div>
       <footer>
-        
         <div class="footer-element">
           <h2>Our Services</h2>
           <ul>
@@ -472,13 +496,43 @@
       <h2>Developed By DigiLark Solutions</h2>
     </div>
   </body>
+
+  <!-- navbar javascript -->
+
   <script>
-    let menu=document.getElementById("sidebar");
+    let menu1 = document.getElementById("sidebar");
+    let menu2 = document.getElementById("sidebar1");
+    let menu3 = document.getElementById("sidebar2");
+    let menu4 = document.getElementById("sidebar3");
+    let menu5 = document.getElementById("sidebar4");
+    let is_open = false;
 
-    function display(){
+    function display(val) {
       // let name="menu"+val;
-      menu.classList.toggle('active1');
-
+      if (val == 0 && is_open == false) {
+        menu1.classList.toggle("active1");
+        is_open = true;
+      } else if (val == 0 && is_open == true) {
+        menu3.classList.remove("active1");
+        menu2.classList.remove("active1");
+        menu1.classList.add("active1");
+        menu4.classList.remove("active1");
+        menu5.classList.remove("active1");
+        is_open = false;
+      } else if (val == 1) {
+        menu2.classList.toggle("active1");
+        menu1.classList.toggle("active1");
+        is_open = true;
+      } else if (val == 2) {
+        menu3.classList.toggle("active1");
+        menu1.classList.toggle("active1");
+      } else if (val == 3) {
+        menu4.classList.toggle("active1");
+        menu1.classList.toggle("active1");
+      } else {
+        menu5.classList.toggle("active1");
+        menu1.classList.toggle("active1");
+      }
     }
   </script>
 </html>
