@@ -821,6 +821,250 @@ footer{
     
 }
 
+@media screen and (max-width:600px ){
+    .contain{
+        background-position: center;
+    }
+    .contain .bottom .text h2{
+        font-size: 2em;
+    }
+    nav ul{
+        display: none;
+    }
+    .sidebar ul{
+        display: block;
+    }
+    .contain nav .icon{
+        display: block;
+    }
+    .active{
+        display: block;
+    }
+    
+    .contain .bottom{
+        display: block;
+    }
+    .contain .bottom .form{
+        margin-top: 80px;
+        margin: 0;
+        width: 100%;
+    }
+    .services .service-cards{
+        display: block;
+        margin: auto;
+        width: 50%;
+        
+    }
+    .services .service-cards .cards{
+        margin: 50px 0;
+    }
+    
+    .second .cards{
+        display: block;
+        margin: auto;
+        width: 50%;
+        padding: 0;
+       
+    }
+    footer{
+        padding: 50px 20px;
+    }
+    .sidebar {
+        display: block;
+    position: fixed;
+    width: 300px;
+    /* min-height:300px ; */
+    /* position: sticky; */
+    top: 90px;
+    right: 0;
+    z-index: 2;
+    
+    transition:  1s;
+    background: #01052c;
+    
+    padding: 0;
+    /* overflow-x: hidden; */
+    transform: translateX(300px);
+    padding: 10px 10px;
+        
+    }
+    .sidebar a{
+        position: relative;
+        display: block;
+        text-decoration:  none;
+        padding: 10px 10px;
+        color: #f7f7f7;
+        font-size: 1.5em;
+        transition: 0.5s;
+        width: 100%;
+        /* text-align: center; */
+    
+    }
+    .sidebar a:hover{
+        color:#4F6BF2
+    }
+
+    .sidebar1 {
+        display: block;
+    position: fixed;
+    width: 300px;
+    /* min-height:300px ; */
+    /* position: sticky; */
+    top: 90px;
+    right: 0;
+    z-index: 2;
+    
+    transition:  1s;
+    background: #01052c;
+    
+    padding: 0;
+    /* overflow-x: hidden; */
+    transform: translateX(300px);
+    padding: 10px 10px;
+        
+    }
+    
+    
+
+    .sidebar1 a{
+        position: relative;
+        display: block;
+        text-decoration:  none;
+        padding: 10px 10px;
+        color: #f7f7f7;
+        font-size: 1.5em;
+        transition: 0.5s;
+        width: 100%;
+        /* text-align: center; */
+    
+    }
+    .sidebar1 a:hover{
+        color:#4F6BF2
+    }
+     
+    
+    .sidebar2 {
+        display: block;
+    position: fixed;
+    width: 300px;
+    /* min-height:300px ; */
+    /* position: sticky; */
+    top: 90px;
+    right: 0;
+    z-index: 2;
+    
+    transition:  1s;
+    background: #01052c;
+    
+    padding: 0;
+    /* overflow-x: hidden; */
+    transform: translateX(300px);
+    padding: 10px 10px;
+        
+    }
+    
+    
+
+    .sidebar2 a{
+        position: relative;
+        display: block;
+        text-decoration:  none;
+        padding: 10px 10px;
+        color: #f7f7f7;
+        font-size: 1.5em;
+        transition: 0.5s;
+        width: 100%;
+        /* text-align: center; */
+    
+    }
+    .sidebar2 a:hover{
+        color:#4F6BF2
+    }
+    
+    .sidebar3 {
+        display: block;
+    position: fixed;
+    width: 300px;
+    /* min-height:300px ; */
+    /* position: sticky; */
+    top: 90px;
+    right: 0;
+    z-index: 2;
+    
+    transition:  1s;
+    background: #01052c;
+    
+    padding: 0;
+    /* overflow-x: hidden; */
+    transform: translateX(300px);
+    padding: 10px 10px;
+        
+    }
+    
+    
+
+    .sidebar3 a{
+        position: relative;
+        display: block;
+        text-decoration:  none;
+        padding: 10px 10px;
+        color: #f7f7f7;
+        font-size: 1.5em;
+        transition: 0.5s;
+        width: 100%;
+        /* text-align: center; */
+    
+    }
+    .sidebar3 a:hover{
+        color:#4F6BF2
+    }
+    .sidebar4 {
+        display: block;
+    position: fixed;
+    width: 300px;
+    /* min-height:300px ; */
+    /* position: sticky; */
+    top: 90px;
+    right: 0;
+    z-index: 2;
+    
+    transition:  1s;
+    background: #01052c;
+    
+    padding: 0;
+    /* overflow-x: hidden; */
+    transform: translateX(300px);
+    padding: 10px 10px;
+        
+    }
+    
+    
+
+    .sidebar4 a{
+        position: relative;
+        display: block;
+        text-decoration:  none;
+        padding: 10px 10px;
+        color: #f7f7f7;
+        font-size: 1.5em;
+        transition: 0.5s;
+        width: 100%;
+        /* text-align: center; */
+    
+    }
+    .sidebar4 a:hover{
+        color:#4F6BF2
+    }
+
+     .active1 {
+        transform: translateX(00px);
+        
+    }
+    
+
+    
+}
+
 .end{
     width: 100%;
     min-height: 50px;
