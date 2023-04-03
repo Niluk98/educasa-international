@@ -33,7 +33,7 @@ body{
 .contain nav .logo{
     position: relative;
     display: flex;
-    width: 180px;
+    width: 200px;
     height: 100%;
     background:transparent;
     justify-content: center;
@@ -41,14 +41,15 @@ body{
     
 }
 #educasa{
-    height: 30px;
+    width: 100%;
+    height: 40px;
     margin-right: 10px;
 }
 
 .contain nav ul li{
     display: inline-block;
     /* position: relative; */
-    padding: 10px;
+    padding: 15px;
     list-style: none;
     float: none;
     background: #01052c;
@@ -57,7 +58,7 @@ body{
     display: block;
     padding: 0 15px;
     /* line-height: 60px; */
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     color: #f7f7f7;
 }
@@ -157,7 +158,7 @@ body{
     position: relative;
     flex: 1;
     margin-left: 20px;
-    margin-top: 30px;
+    margin-top: 60px;
     /* background-color: aqua; */
     /* width: 100%; */
     min-height: 500px;
@@ -167,13 +168,13 @@ body{
 .contain .bottom .text h2{
     color:  #ffff;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 30px;
     margin-bottom: 40px;
 }
 .contain .bottom .text h2 span{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5em;
+    font-size: 5px;
     color: #C34A36;
     transition: 0.5s;
     line-height: 1em;
@@ -198,10 +199,10 @@ body{
     margin-left: 80px;
     flex: 1;
     margin-right: 40px;
-    margin-top: 20px;
+    margin-top: 70px;
     width: 70%;
     height: 650px;
-    opacity: 0.8;
+    opacity: 1;
     background-color: #f7f7f7;
     /* right: 200px; */
     /* top: 80px; */
@@ -286,14 +287,11 @@ body{
     opacity: 1;
 }
 
-#advice #study{
-    color: #f7f7f7;
-    font-size: 2em;
-}
+
 
 #advice span{
     color: #FFC75F;
-    font-size: 80px;
+    font-size: 60px;
 }
 #tagline{
     font-size: 32px;
@@ -526,7 +524,7 @@ footer{
 
 }
 #Goals{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 /* About */
@@ -848,6 +846,7 @@ footer{
     }
     .contain .bottom .form{
         margin: 30px;
+        min-height: 160vh;
     }
     .contain nav .icon{
    
