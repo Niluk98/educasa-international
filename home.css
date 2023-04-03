@@ -867,11 +867,11 @@ footer{
     .contain nav .icon{
         padding-bottom: 10px;
         position: fixed;
-        top: 4px;
+        top: 5px;
         right: 0%;
         display: none;
         color: #f7f7f7;
-        font-size: 1.5em;
+        font-size: 2em;
         z-index: 1;
         display: none;
         background-color: #01052c;
@@ -883,13 +883,7 @@ footer{
         width: 50px;
         cursor: pointer;
     }
-    .contain nav .icon{
-        display: flex;
-        justify-content: center;
-        /* align-items: center; */
-        /* justify-items: center; */
-        padding: 25px;
-    }
+     
     
     
     #advice{
@@ -1098,7 +1092,13 @@ footer{
     padding: 10px 10px;
         
     }
-    
+    .contain nav .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center; 
+     /* padding: 20px; */
+    } 
     
 
     .sidebar1 a{
