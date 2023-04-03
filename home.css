@@ -33,7 +33,7 @@ body{
 .contain nav .logo{
     position: relative;
     display: flex;
-    width: 200px;
+    width: 180px;
     height: 100%;
     background:transparent;
     justify-content: center;
@@ -42,6 +42,7 @@ body{
 }
 #educasa{
     height: 30px;
+    margin-right: 10px;
 }
 
 .contain nav ul li{
