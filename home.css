@@ -883,6 +883,13 @@ footer{
         width: 50px;
         cursor: pointer;
     }
+    .contain nav .icon{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        /* justify-items: center; */
+        padding: 25px;
+    }
     
     
     #advice{
