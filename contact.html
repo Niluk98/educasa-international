@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <link rel="icon" href="./Images/logo 1-final.jpeg" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
       rel="stylesheet"
@@ -169,79 +170,75 @@
         padding: 70px 30px;
         background: #edeeff;
       }
-      .contactform{
+      .contactform {
+        width: 40%;
+        padding: 80px;
+        background: transparent;
+        opacity: 1;
+      }
+      .contactform h2 {
+        font-size: 50px;
+        color: #333;
+        font-weight: 600;
+      }
+      .contactform .inputBox {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+      }
+      .contactform .inputBox input,
+      .contactform .inputBox textarea {
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+        background: transparent;
+      }
+      .contactform .inputBox span {
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #666;
+      }
+      .contactform .inputBox input:focus ~ span,
+      .contactform .inputBox input:valid ~ span,
+      .contactform .inputBox textarea:focus ~ span,
+      .contactform .inputBox textarea:valid ~ span {
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-20px);
+      }
+      .story {
+        background: #01052c;
+        color: #f7f7f7;
+        padding: 50px;
+      }
+      .story h2 {
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+      }
 
-    width: 40%;
-    padding: 80px;
-    background: transparent;
-    opacity: 1;
-}
-.contactform h2{
-    font-size: 50px;
-    color: #333;
-    font-weight: 600;
-}
-.contactform .inputBox{
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
-}
-.contactform .inputBox input,
-.contactform .inputBox textarea
-{
-    width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid #333;
-    outline: none;
-    resize: none;
-    background: transparent;
-
-}
-.contactform .inputBox span{
-    position: absolute;
-    left: 0;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.5s;
-    color: #666;
-}
-.contactform .inputBox input:focus ~ span,
-.contactform .inputBox input:valid ~ span,
-.contactform .inputBox textarea:focus ~ span,
-.contactform .inputBox textarea:valid ~ span{
-    color: #e91e63;
-    font-size: 12px;
-    transform: translateY(-20px);
-
-}
-.story{
-    background:#01052c;
-    color: #f7f7f7;
-    padding: 50px;
-}
-.story h2{
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-}
-
-.contactform .inputBox input[type="submit"]{
-    width: 100px;
-    background: #00bcd4;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
-    transition: 0.5s;
-    border-radius: 5px;
-}
-.contactform .inputBox input[type="submit"]:hover {
+      .contactform .inputBox input[type="submit"] {
+        width: 100px;
+        background: #00bcd4;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+        transition: 0.5s;
+        border-radius: 5px;
+      }
+      .contactform .inputBox input[type="submit"]:hover {
         color: black;
         background-color: orange;
       }
@@ -251,19 +248,18 @@
         padding: 50px 20px;
         line-height: 2em;
       }
-      .city .image{
+      .city .image {
         width: 300px;
         height: 200px;
         margin: 10px;
       }
-      .city .details{
+      .city .details {
         padding-left: 20px;
       }
-      .second{
+      .second {
         background-color: #f9f9f9;
       }
 
-       
       .contain .bottom .form p {
         margin-left: 40px;
         color: #fff;
@@ -370,9 +366,9 @@
         .sidebar ul {
           display: block;
         }
-        .contactform{
-            background: #f7f7f7;
-            width: 100%;
+        .contactform {
+          background: #f7f7f7;
+          width: 100%;
         }
         .contain nav .icon {
           display: flex;
@@ -386,50 +382,49 @@
           display: block;
         }
         .header {
-        height: 1000px;
-        position: relative;
-      }
+          height: 1000px;
+          position: relative;
+        }
         .contain .bottom {
           display: block;
         }
         .bottom .city {
-        display: flex;
-        justify-content: center;
-        padding: 20px 10px;
-        line-height: 10px;
-      }
-      .city .image{
-        width: 300px;
-        height: 200px;
-        /* margin: 10px; */
-      }
-      .city .details{
-        padding-left: 10px;
-      }
-      .second{
-        background-color: #f9f9f9;
-      }
-      .bottom .city {
-        display: grid;
-        justify-content: center;
-        padding: 50px 20px;
-        line-height: 2em;
-        font-size: 10px;
-        font-weight: 600;
-        letter-spacing: 0.2px;
-      }
-      .city .image{
-        width: 300px;
-        height: 200px;
-        /* margin: 10px; */
-      }
-      .city .details{
-        padding-left: 20px;
-      }
-      .second{
-        background-color: #f9f9f9;
-      }
-
+          display: flex;
+          justify-content: center;
+          padding: 20px 10px;
+          line-height: 10px;
+        }
+        .city .image {
+          width: 300px;
+          height: 200px;
+          /* margin: 10px; */
+        }
+        .city .details {
+          padding-left: 10px;
+        }
+        .second {
+          background-color: #f9f9f9;
+        }
+        .bottom .city {
+          display: grid;
+          justify-content: center;
+          padding: 50px 20px;
+          line-height: 2em;
+          font-size: 10px;
+          font-weight: 600;
+          letter-spacing: 0.2px;
+        }
+        .city .image {
+          width: 300px;
+          height: 200px;
+          /* margin: 10px; */
+        }
+        .city .details {
+          padding-left: 20px;
+        }
+        .second {
+          background-color: #f9f9f9;
+        }
 
         .sidebar {
           display: block;
@@ -708,7 +703,7 @@
               <li><a href="./visa.html">VISA Guidance</a></li>
               <li><a href="./finance.html">Financial Assistance</a></li>
               <li><a href="./deperture.html">Pre-Departure Service</a></li>
-              <li><a href="">Scholarship Assistance</a></li>
+              <li><a href="./scholarship.html">Scholarship Assistance</a></li>
             </ul>
           </li>
           <li>
@@ -755,14 +750,15 @@
         </div>
         <div class="sidebar2" id="sidebar2">
           <div class="content">
-            <a href="#">Career Counselling</a>
-            <a href="#">Accommodation Assistance</a>
-            <a href="#">University and Course Selection</a>
-            <a href="#">Visa Assistance</a>
-            <a href="#">Application Guidance</a>
-            <a href="#">Financial Assistance</a>
-            <a href="#">Pre Departure Assistance</a>
-            <a href="#">International Education Counselling</a>
+            <a href="./careerCounselling.html">Career Counselling</a>
+            <a href="./accomodationAssistance.html">Accommodation Assistance</a>
+            <a href="./universityCourse.html">University and Course Selection</a>
+            <a href="./visa.html">Visa Assistance</a>
+            <a href="./applicationGuidance.html">Application Guidance</a>
+            <a href="./finance.html">Financial Assistance</a>
+            <a href="./deperture.html">Pre Departure Assistance</a>
+            <a href="./internationaleducation.html">International Education Counselling</a>
+            <a href="./scholarship.html">Scholarship Assistance</a>
           </div>
         </div>
         <div class="sidebar3" id="sidebar3">
@@ -794,10 +790,14 @@
         <h1>Contact Us</h1>
       </div>
       <div class="story">
-        <h2>We are really committed to each student's success, and their development is the centre of both our existence and our progress. Hence, we are truly excited to get in touch with you. <br><br> Please feel free to connect.</h2>
-    </div>
+        <h2>
+          We are really committed to each student's success, and their
+          development is the centre of both our existence and our progress.
+          Hence, we are truly excited to get in touch with you. <br /><br />
+          Please feel free to connect.
+        </h2>
+      </div>
       <div class="bottom">
-        
         <div class="text">
           <div class="city">
             <div class="details">
@@ -809,23 +809,31 @@
               </p>
             </div>
             <div class="image">
-              <img src="./Images/ahmedabad.jpg" alt=""  height="100%" width="100%"/>
+              <img
+                src="./Images/ahmedabad.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
             </div>
           </div>
           <div class="city second">
             <div class="image">
-                <img src="./Images/bhubaneshwar.jpg" alt="" height="100%" width="100%" />
-              </div>
+              <img
+                src="./Images/bhubaneshwar.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
+            </div>
 
             <div class="details">
-                
               <p>
                 BHUBANESWAR <br />
                 Room No. 2/6 Barabhuja Commercial Complex <br />
                 Khandagiri, P.O. Khandagiri, Bhubaneswar-751 030 <br />
               </p>
             </div>
-            
           </div>
           <div class="city">
             <div class="details">
@@ -836,13 +844,23 @@
               </p>
             </div>
             <div class="image">
-              <img src="./Images/chandigarh.png" alt="" height="100%" width="100%" />
+              <img
+                src="./Images/chandigarh.png"
+                alt=""
+                height="100%"
+                width="100%"
+              />
             </div>
           </div>
           <div class="city second">
             <div class="image">
-                <img src="./Images/chennai.jpg" alt="" height="100%" width="100%" />
-              </div>
+              <img
+                src="./Images/chennai.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
+            </div>
             <div class="details">
               <p>
                 CHENNAI <br />
@@ -851,7 +869,6 @@
                 Tel. : 044-28350773, Fax : 044-28350773 <br />
               </p>
             </div>
-            
           </div>
           <div class="city">
             <div class="details">
@@ -863,14 +880,19 @@
                 Tel.: 011-28521618, 28525084, Telefax: 011-28520912 <br />
               </p>
             </div>
-            <div class="image"> 
+            <div class="image">
               <img src="./Images/delhi.jpg" alt="" height="100%" width="100%" />
             </div>
           </div>
           <div class="city second">
             <div class="image">
-                <img src="./Images/jaipur.jpg" alt="" height="100%" width="100%" />
-              </div>
+              <img
+                src="./Images/jaipur.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
+            </div>
             <div class="details">
               <p>
                 JAIPUR <br />
@@ -880,7 +902,6 @@
                 Tel. : 0141-2545924 <br />
               </p>
             </div>
-            
           </div>
           <div class="city">
             <div class="details">
@@ -895,12 +916,22 @@
               </p>
             </div>
             <div class="image">
-              <img src="./Images/kakinada.jpg" alt="" height="100%" width="100%" />
+              <img
+                src="./Images/kakinada.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
             </div>
           </div>
           <div class="city second">
             <div class="image">
-                <img src="./Images/kanpur.jpg" alt="" height="100%" width="100%" />
+              <img
+                src="./Images/kanpur.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
             </div>
             <div class="details">
               <p>
@@ -911,7 +942,6 @@
                 Kanpur - 208 012 (U P) <br />
               </p>
             </div>
-            
           </div>
           <div class="city">
             <div class="details">
@@ -929,8 +959,13 @@
           </div>
           <div class="city second">
             <div class="image">
-                <img src="./Images/kolkata.jpg" alt="" height="100%" width="100%" />
-              </div>
+              <img
+                src="./Images/kolkata.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
+            </div>
             <div class="details">
               <p>
                 KOLKATA <br />
@@ -941,7 +976,6 @@
                 Tel. : 033-40292103, 033-23574290, Fax : 033-23577054 <br />
               </p>
             </div>
-            
           </div>
           <div class="city">
             <div class="details">
@@ -953,13 +987,23 @@
               </p>
             </div>
             <div class="image">
-              <img src="./Images/lucknow.jpg" alt="" height="100%" width="100%" />
+              <img
+                src="./Images/lucknow.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
             </div>
           </div>
           <div class="city second">
             <div class="image">
-                <img src="./Images/mumbai.jpg" alt="" height="100%" width="100%" />
-              </div>
+              <img
+                src="./Images/mumbai.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
+            </div>
             <div class="details">
               <p>
                 MUMBAI <br />
@@ -969,7 +1013,6 @@
                 Tel.: 022-25536391, 022-25535851 <br />
               </p>
             </div>
-            
           </div>
           <div class="city">
             <div class="details">
@@ -982,13 +1025,23 @@
               </p>
             </div>
             <div class="image">
-              <img src="./Images/mysore.jpg" alt="" height="100%" width="100%"  />
+              <img
+                src="./Images/mysore.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
             </div>
           </div>
           <div class="city second">
             <div class="image">
-                <img src="./Images/nagpur.png" alt="" height="100%" width="100%" />
-              </div>
+              <img
+                src="./Images/nagpur.png"
+                alt=""
+                height="100%"
+                width="100%"
+              />
+            </div>
             <div class="details">
               <p>
                 NAGPUR <br />
@@ -998,7 +1051,6 @@
                 Tel. : 0712-2551890 Fax: 0712-2551890 <br />
               </p>
             </div>
-            
           </div>
           <div class="city">
             <div class="details">
@@ -1016,8 +1068,13 @@
           </div>
           <div class="city second">
             <div class="image">
-                <img src="./Images/palakkad.jpg" alt="" height="100%" width="100%" />
-              </div>
+              <img
+                src="./Images/palakkad.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
+            </div>
             <div class="details">
               <p>
                 PALAKKAD <br />
@@ -1026,9 +1083,8 @@
                 Palakkad - 678 001 Tel : 0491-2525666/0491-2955666 <br />
               </p>
             </div>
-            
           </div>
-          <div class="city ">
+          <div class="city">
             <div class="details">
               <p>
                 PATNA <br />
@@ -1038,13 +1094,13 @@
               </p>
             </div>
             <div class="image">
-              <img src="./Images/gaya.jpg" alt="" height="100%" width="100%"  />
+              <img src="./Images/gaya.jpg" alt="" height="100%" width="100%" />
             </div>
           </div>
           <div class="city second">
             <div class="image">
-                <img src="./Images/pune.jpg" alt="" height="100%" width="100%" />
-              </div>
+              <img src="./Images/pune.jpg" alt="" height="100%" width="100%" />
+            </div>
             <div class="details">
               <p>
                 PUNE <br />
@@ -1053,7 +1109,6 @@
                 Pune-411 004 Tel. : 020-25449762 <br />
               </p>
             </div>
-            
           </div>
           <div class="city">
             <div class="details">
@@ -1066,13 +1121,23 @@
               </p>
             </div>
             <div class="image">
-              <img src="./Images/rajkot.png" alt="" height="100%" width="100%" />
+              <img
+                src="./Images/rajkot.png"
+                alt=""
+                height="100%"
+                width="100%"
+              />
             </div>
           </div>
           <div class="city second">
             <div class="image">
-                <img src="./Images/shimla.jpg" alt="" height="100%" width="100%" />
-              </div>
+              <img
+                src="./Images/shimla.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
+            </div>
             <div class="details">
               <p>
                 SHIMLA <br />
@@ -1082,7 +1147,6 @@
                 E-mail : ieteshimla@gmail.com, shimla@iete.org <br />
               </p>
             </div>
-            
           </div>
           <div class="city">
             <div class="details">
@@ -1093,14 +1157,24 @@
                 Tel. : 0471-2554727 Fax : 0471-2554727 <br />
               </p>
             </div>
-            <div class="image ">
-              <img src="./Images/thiruvananthapuram.jpg" alt="" height="100%" width="100%" />
+            <div class="image">
+              <img
+                src="./Images/thiruvananthapuram.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
             </div>
           </div>
           <div class="city second">
             <div class="image">
-                <img src="./Images/tirupati.jpg" alt="" height="100%" width="100%" />
-              </div>
+              <img
+                src="./Images/tirupati.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
+            </div>
             <div class="details">
               <p>
                 TIRUPATI <br />
@@ -1109,7 +1183,6 @@
                 Balaji Colony, Tirupati - 517 502 <br />
               </p>
             </div>
-            
           </div>
           <div class="city">
             <div class="details">
@@ -1122,13 +1195,18 @@
               </p>
             </div>
             <div class="image">
-              <img src="./Images/vadodara.jpg" alt="" height="100%" width="100%" />
+              <img
+                src="./Images/vadodara.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
             </div>
           </div>
           <div class="city second">
             <div class="image">
-                <img src="./Images/vizag.jpg" alt="" height="100%" width="100%" />
-              </div>
+              <img src="./Images/vizag.jpg" alt="" height="100%" width="100%" />
+            </div>
             <div class="details">
               <p>
                 VISAKHAPATNAM <br />
@@ -1138,7 +1216,6 @@
                 Tel. : 0891-2844613 E-mail : iete.vizag@gmail.com <br />
               </p>
             </div>
-            
           </div>
 
           <br />
@@ -1150,104 +1227,101 @@
         </div>
 
         <div class="contactform">
-            <form>
-                <h2>Send Message</h2>
-                <div class="inputBox">
-                    <input type="text" name="" required="required">
-                    <span>Full Name</span>
-                </div>
-                <div class="inputBox">
-                    <input type="text" name="" required="required">
-                    <span>Email</span>
-                </div>
-                <div class="inputBox">
-                    <textarea  required="required"></textarea>
-                    <span>Type your Message. . .</span>
-                </div>
-                <div class="inputBox">
-                    <input type="submit" name="" value="Send" id="button">
-                </div>
-
-            </form>
-
-        </div>
+          <form>
+            <h2>Send Message</h2>
+            <div class="inputBox">
+              <input type="text" name="" required="required" />
+              <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="" required="required" />
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <textarea required="required"></textarea>
+              <span>Type your Message. . .</span>
+            </div>
+            <div class="inputBox">
+              <input type="submit" name="" value="Send" id="button" />
+            </div>
+          </form>
         </div>
       </div>
+    </div>
 
-      <div class="footer">
-        <div class="image">
-          <img
-            src="./Images/logo 1-final.jpeg"
-            alt=""
-            width="100%"
-            height="100%"
-          />
-          <img
-            src="./Images/logo 2-final.jpeg"
-            alt=""
-            width="100%"
-            height="100%"
-            id="logo"
-          />
+    <div class="footer">
+      <div class="image">
+        <img
+          src="./Images/logo 1-final.jpeg"
+          alt=""
+          width="100%"
+          height="100%"
+        />
+        <img
+          src="./Images/logo 2-final.jpeg"
+          alt=""
+          width="100%"
+          height="100%"
+          id="logo"
+        />
+      </div>
+      <footer>
+        <div class="footer-element">
+          <h2>Our Services</h2>
+          <ul>
+            <li><a href="./careerCounselling.html">Career Counselling</a></li>
+            <li>
+              <a href="./accomodationAssistance.html"
+                >Accommodation Assistance</a
+              >
+            </li>
+            <li>
+              <a href="./educationCounselling.html"
+                >International Education Counselling</a
+              >
+            </li>
+            <li>
+              <a href="./universityCourse.html"
+                >University and Course Selection</a
+              >
+            </li>
+            <li>
+              <a href="./applicationGuidance.html">Application Guidance</a>
+            </li>
+            <li><a href="./visa.html">VISA Guidance</a></li>
+            <li><a href="./finance.html">Financial Assistance</a></li>
+            <li><a href="./deperture.html">Pre-Departure Service</a></li>
+            <li><a href="./scholarship.html">Scholarship Assistance</a></li>
+          </ul>
         </div>
-        <footer>
-          <div class="footer-element">
-            <h2>Our Services</h2>
-            <ul>
-              <li><a href="./careerCounselling.html">Career Counselling</a></li>
-              <li>
-                <a href="./accomodationAssistance.html"
-                  >Accommodation Assistance</a
-                >
-              </li>
-              <li>
-                <a href="./educationCounselling.html"
-                  >International Education Counselling</a
-                >
-              </li>
-              <li>
-                <a href="./universityCourse.html"
-                  >University and Course Selection</a
-                >
-              </li>
-              <li>
-                <a href="./applicationGuidance.html">Application Guidance</a>
-              </li>
-              <li><a href="./visa.html">VISA Guidance</a></li>
-              <li><a href="./finance.html">Financial Assistance</a></li>
-              <li><a href="./deperture.html">Pre-Departure Service</a></li>
-              <li><a href="">Scholarship Assistance</a></li>
-            </ul>
-          </div>
-          <div class="footer-element">
-            <h2>Study Destinations</h2>
-            <ul>
-              <li><a href="">Study in US</a></li>
-              <li><a href="">Study in UK</a></li>
-              <li><a href="">Study in Australia</a></li>
-              <li><a href="">Study in Canada</a></li>
-              <li><a href="">Study in Ireland</a></li>
-              <li><a href="">Study in New Zealand</a></li>
-            </ul>
-          </div>
-          <div class="footer-element">
-            <h2>Contact Us</h2>
-            <h3>
-              Educasa <br />
-              International
-            </h3>
-            <p>
-              Mekhri Circle,Behind CBI Office,<br />
-              Bellary Road, Ganganagar Extension, <br />
-              Bengaluru 560036 <br />
-              Mobile No. 9380293380
-            </p>
-          </div>
-        </footer>
-      </div>
-      <div class="end">
-        <h2>Developed By DigiLark Solutions</h2>
-      </div>
+        <div class="footer-element">
+          <h2>Study Destinations</h2>
+          <ul>
+            <li><a href="">Study in US</a></li>
+            <li><a href="">Study in UK</a></li>
+            <li><a href="">Study in Australia</a></li>
+            <li><a href="">Study in Canada</a></li>
+            <li><a href="">Study in Ireland</a></li>
+            <li><a href="">Study in New Zealand</a></li>
+          </ul>
+        </div>
+        <div class="footer-element">
+          <h2>Contact Us</h2>
+          <h3>
+            Educasa <br />
+            International
+          </h3>
+          <p>
+            Mekhri Circle,Behind CBI Office,<br />
+            Bellary Road, Ganganagar Extension, <br />
+            Bengaluru 560036 <br />
+            Mobile No. 9380293380
+          </p>
+        </div>
+      </footer>
+    </div>
+    <div class="end">
+      <h2>Developed By DigiLark Solutions</h2>
     </div>
   </body>
 
