@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accomodation Assistance</title>
+    <title>Contact Us</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
       rel="stylesheet"
@@ -169,80 +169,101 @@
         padding: 70px 30px;
         background: #edeeff;
       }
+      .contactform{
 
-      .contain .bottom .form {
-        position: relative;
-        margin-left: 80px;
-        flex: 1;
-        margin-right: 40px;
-        margin-top: 70px;
-        width: 70%;
-        height: 700px;
-        opacity: 0.8;
-        background-color: #f7f7f7;
-        /* right: 200px; */
-        /* top: 80px; */
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        text-align: center;
-      }
-      .contain .bottom .form h1 {
-        color: black;
-        font-size: 3em;
-        font-weight: 400;
-        margin-bottom: 50px;
-      }
+    width: 40%;
+    padding: 80px;
+    background: transparent;
+    opacity: 1;
+}
+.contactform h2{
+    font-size: 50px;
+    color: #333;
+    font-weight: 600;
+}
+.contactform .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputBox input,
+.contactform .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    background: transparent;
 
-      .contain .bottom .form input {
-        margin-left: 0px;
-        width: 100%;
-        /* background: transparent; */
-        height: 40px;
-        border: none;
-        border-bottom: 2px solid black;
-        margin-bottom: 30px;
-        color: black;
-        font-weight: 600;
-      }
-      .contain .bottom .form button {
-        position: relative;
-        width: 100%;
-        height: 50px;
-        background: #4f6bf2;
-        opacity: 1;
-        color: #fff;
-        font-size: 1em;
-        transition: 0.5s ease;
-        cursor: pointer;
-        font-weight: 600;
-        /* border-radius: 15%; */
-        overflow: hidden;
-      }
-      .contain .bottom .form select {
-        width: 100%;
-        height: 40px;
-        margin-bottom: 30px;
-        /* margin: 10px; */
-        /* padding-top: 5px; */
-        background: transparent;
-        color: black;
-        font-weight: 600;
-        border: none;
-        border-bottom: 2px solid black;
-      }
-      .contain .bottom .form select option {
-        background-color: rgb(169, 125, 44);
-        font-size: 1.2em;
-        font-weight: 600;
-        color: #fff;
-      }
+}
+.contactform .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactform .inputBox input:focus ~ span,
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span,
+.contactform .inputBox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
 
-      .contain .bottom .form button:hover {
+}
+.story{
+    background:#01052c;
+    color: #f7f7f7;
+    padding: 50px;
+}
+.story h2{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.contactform .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.contactform .inputBox input[type="submit"]:hover {
         color: black;
         background-color: orange;
       }
+      .bottom .city {
+        display: flex;
+        justify-content: center;
+        padding: 50px 20px;
+        line-height: 2em;
+      }
+      .city .image{
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+      }
+      .city .details{
+        padding-left: 20px;
+      }
+      .second{
+        background-color: #f9f9f9;
+      }
+
+       
       .contain .bottom .form p {
         margin-left: 40px;
         color: #fff;
@@ -348,6 +369,10 @@
         }
         .sidebar ul {
           display: block;
+        }
+        .contactform{
+            background: #f7f7f7;
+            width: 100%;
         }
         .contain nav .icon {
           display: flex;
@@ -620,14 +645,28 @@
             <a href="#">Our Services</a>
             <ul>
               <li><a href="./careerCounselling.html">Career Counselling</a></li>
-            <li><a href="./accomodationAssistance.html">Accommodation Assistance</a></li>
-            <li><a href="./educationCounselling.html">International Education Counselling</a></li>
-            <li><a href="./universityCourse.html">University and Course Selection</a></li>
-            <li><a href="./applicationGuidance.html">Application Guidance</a></li>
-            <li><a href="./visa.html">VISA Guidance</a></li>
-            <li><a href="./finance.html">Financial Assistance</a></li>
-            <li><a href="./deperture.html">Pre-Departure Service</a></li>
-            <li><a href="">Scholarship Assistance</a></li>
+              <li>
+                <a href="./accomodationAssistance.html"
+                  >Accommodation Assistance</a
+                >
+              </li>
+              <li>
+                <a href="./educationCounselling.html"
+                  >International Education Counselling</a
+                >
+              </li>
+              <li>
+                <a href="./universityCourse.html"
+                  >University and Course Selection</a
+                >
+              </li>
+              <li>
+                <a href="./applicationGuidance.html">Application Guidance</a>
+              </li>
+              <li><a href="./visa.html">VISA Guidance</a></li>
+              <li><a href="./finance.html">Financial Assistance</a></li>
+              <li><a href="./deperture.html">Pre-Departure Service</a></li>
+              <li><a href="">Scholarship Assistance</a></li>
             </ul>
           </li>
           <li>
@@ -709,27 +748,357 @@
       </nav>
 
       <div class="header">
-        <img src="./Images/accomodation.jpg" alt="" width="100%" height="100%" />
-        <h1>Accommodation Assistance</h1>
+        <img src="./Images/contact-us.jpg" alt="" width="100%" height="100%" />
+        <h1>Contact Us</h1>
       </div>
+      <div class="story">
+        <h2>We are really committed to each student's success, and their development is the centre of both our existence and our progress. Hence, we are truly excited to get in touch with you. Please feel free to connect.</h2>
+    </div>
       <div class="bottom">
+        
         <div class="text">
-          We recognise that moving to a foreign nation, particularly when you
-          are young, might be intimidating. Making a new home outside of your
-          place of origin is a crucial component of adjusting to the new culture
-          and environment. The correct lodging can make all the difference and
-          influence how smoothly you adjust to living abroad. <br>
-          <br>
+          <div class="city">
+            <div class="details">
+              <p>
+                AHMEDABAD <br />
+                206, Umiya Vijay Shopping Centre <br />
+                Near Shivranjani, Satellite Road, Ahmedabad-380 015 <br />
+                Tel. : 079-26753938 <br />
+              </p>
+            </div>
+            <div class="image">
+              <img src="./Images/ahmedabad.jpg" alt=""  height="100%" width="100%"/>
+            </div>
+          </div>
+          <div class="city second">
+            <div class="image">
+                <img src="./Images/bhubaneshwar.jpg" alt="" height="100%" width="100%" />
+              </div>
 
-           Our team of
-          counsellors works with your parents and you to determine the kind of
-          housing that would be most appropriate for you. <br> <br> While counselling you
-          on choosing between on-campus housing and off-campus housing, we take
-          into account aspects including safety, commuting time, cost, quality
-          of life, and college schedules.
-          <br> <br>
-           We can assist you in locating
-          international student-heavy districts in the city of your choice.
+            <div class="details">
+                
+              <p>
+                BHUBANESWAR <br />
+                Room No. 2/6 Barabhuja Commercial Complex <br />
+                Khandagiri, P.O. Khandagiri, Bhubaneswar-751 030 <br />
+              </p>
+            </div>
+            
+          </div>
+          <div class="city">
+            <div class="details">
+              <p>
+                CHANDIGARH <br />
+                Plot No.: M-925, IETE Building, Sector 30 B <br />
+                Chandigarh 160030 Phone: 0172-2651061 <br />
+              </p>
+            </div>
+            <div class="image">
+              <img src="./Images/chandigarh.png" alt="" height="100%" width="100%" />
+            </div>
+          </div>
+          <div class="city second">
+            <div class="image">
+                <img src="./Images/chennai.jpg" alt="" height="100%" width="100%" />
+              </div>
+            <div class="details">
+              <p>
+                CHENNAI <br />
+                37, Conran Smith Road, (New No. 169) Main Entrance <br />
+                Peters Road, Gopalapuram, Chennai - 600 086 <br />
+                Tel. : 044-28350773, Fax : 044-28350773 <br />
+              </p>
+            </div>
+            
+          </div>
+          <div class="city">
+            <div class="details">
+              <p>
+                DELHI <br />
+                (Owned) <br />
+                16/1-2, Institutional Area <br />
+                Pankha Road, Janakpuri, New Delhi - 110 058 <br />
+                Tel.: 011-28521618, 28525084, Telefax: 011-28520912 <br />
+              </p>
+            </div>
+            <div class="image"> 
+              <img src="./Images/delhi.jpg" alt="" height="100%" width="100%" />
+            </div>
+          </div>
+          <div class="city second">
+            <div class="image">
+                <img src="./Images/jaipur.jpg" alt="" height="100%" width="100%" />
+              </div>
+            <div class="details">
+              <p>
+                JAIPUR <br />
+                (Owned) <br />
+                IETE Bhawan, 'D' Block, Shopping Centre <br />
+                Malaviya Nagar, Jaipur - 302 017 <br />
+                Tel. : 0141-2545924 <br />
+              </p>
+            </div>
+            
+          </div>
+          <div class="city">
+            <div class="details">
+              <p>
+                KAKINADA <br />
+                (Owned) <br />
+                J N T University Kakinada <br />
+                Pithapuram Road, <br />
+                Dt East Godavari Kakinada - 533 003 <br />
+                Tel 0884-2300862, Fax 0884-2300823 <br />
+                Shri Jamini Sharma <br />
+              </p>
+            </div>
+            <div class="image">
+              <img src="./Images/kakinada.jpg" alt="" height="100%" width="100%" />
+            </div>
+          </div>
+          <div class="city second">
+            <div class="image">
+                <img src="./Images/kanpur.jpg" alt="" height="100%" width="100%" />
+            </div>
+            <div class="details">
+              <p>
+                KANPUR <br />
+                (Owned) <br />
+                1 st Floor, Vasundhara Complex <br />
+                111/457, 80 Feet Road, Brahm Nagar <br />
+                Kanpur - 208 012 (U P) <br />
+              </p>
+            </div>
+            
+          </div>
+          <div class="city">
+            <div class="details">
+              <p>
+                KOCHI <br />
+                (Owned) <br />
+                IETE HOUSE , 3rd Floor, Jewel Arcade <br />
+                Layam Road, Kochi - 682 011 <br />
+                Tel : 0484-2369944 <br />
+              </p>
+            </div>
+            <div class="image">
+              <img src="./Images/kochi.jpg" alt="" height="100%" width="100%" />
+            </div>
+          </div>
+          <div class="city second">
+            <div class="image">
+                <img src="./Images/kolkata.jpg" alt="" height="100%" width="100%" />
+              </div>
+            <div class="details">
+              <p>
+                KOLKATA <br />
+                (Owned) <br />
+                Plot No. J1-7,EP-Block, Sector-V <br />
+                Salt Lake Electronics Complex, Salt Lake <br />
+                (Opp. Webel Bhavan) Kolkata - 700 091 <br />
+                Tel. : 033-40292103, 033-23574290, Fax : 033-23577054 <br />
+              </p>
+            </div>
+            
+          </div>
+          <div class="city">
+            <div class="details">
+              <p>
+                LUCKNOW <br />
+                (Owned) <br />
+                3-D, Khushnuma Complex, 7, Meerabai Marg <br />
+                Lucknow - 226 001 Tel. : 0522-2207779 <br />
+              </p>
+            </div>
+            <div class="image">
+              <img src="./Images/lucknow.jpg" alt="" height="100%" width="100%" />
+            </div>
+          </div>
+          <div class="city second">
+            <div class="image">
+                <img src="./Images/mumbai.jpg" alt="" height="100%" width="100%" />
+              </div>
+            <div class="details">
+              <p>
+                MUMBAI <br />
+                (Owned) <br />
+                73-B, IETE House, Collector's Colony <br />
+                Mahul Road, Chembur, Mumbai - 400 074 <br />
+                Tel.: 022-25536391, 022-25535851 <br />
+              </p>
+            </div>
+            
+          </div>
+          <div class="city">
+            <div class="details">
+              <p>
+                MYSURU <br />
+                (Owned) <br />
+                # No. 201, Mythri Arcade <br />
+                1st Main, Saraswathipuram <br />
+                Mysuru-570 009 Tel. : 0821-2518171 <br />
+              </p>
+            </div>
+            <div class="image">
+              <img src="./Images/mysore.jpg" alt="" height="100%" width="100%"  />
+            </div>
+          </div>
+          <div class="city second">
+            <div class="image">
+                <img src="./Images/nagpur.png" alt="" height="100%" width="100%" />
+              </div>
+            <div class="details">
+              <p>
+                NAGPUR <br />
+                (Owned) <br />
+                131, Near Gajanan Mandir, Zenda Chowk <br />
+                Dharampeth, Nagpur-440 010 <br />
+                Tel. : 0712-2551890 Fax: 0712-2551890 <br />
+              </p>
+            </div>
+            
+          </div>
+          <div class="city">
+            <div class="details">
+              <p>
+                NOIDA <br />
+                (Owned) <br />
+                PS-1D, Behind Brahamputra Shopping Complex <br />
+                Sector-29, Arun Vihar, Noida - 201 303 <br />
+                Tel. : 0120-4230534 <br />
+              </p>
+            </div>
+            <div class="image">
+              <img src="./Images/noida.jpg" alt="" height="100%" width="100%" />
+            </div>
+          </div>
+          <div class="city second">
+            <div class="image">
+                <img src="./Images/palakkad.jpg" alt="" height="100%" width="100%" />
+              </div>
+            <div class="details">
+              <p>
+                PALAKKAD <br />
+                (Owned) <br />
+                28/143,144, 2nd Floor, West Fort Road <br />
+                Palakkad - 678 001 Tel : 0491-2525666/0491-2955666 <br />
+              </p>
+            </div>
+            
+          </div>
+          <div class="city ">
+            <div class="details">
+              <p>
+                PATNA <br />
+                (Owned) <br />
+                205, 2nd Floor Sri Ram Plaza, Station Road <br />
+                Patna - 800 001 Tel. : +91-77395-27407 <br />
+              </p>
+            </div>
+            <div class="image">
+              <img src="./Images/gaya.jpg" alt="" height="100%" width="100%"  />
+            </div>
+          </div>
+          <div class="city second">
+            <div class="image">
+                <img src="./Images/pune.jpg" alt="" height="100%" width="100%" />
+              </div>
+            <div class="details">
+              <p>
+                PUNE <br />
+                (Owned) <br />
+                “Raghuraj” 62, Indiranagar, Erandwane <br />
+                Pune-411 004 Tel. : 020-25449762 <br />
+              </p>
+            </div>
+            
+          </div>
+          <div class="city">
+            <div class="details">
+              <p>
+                RAJKOT <br />
+                (Owned) <br />
+                PRERNA-2, 1st Floor, Tirupatinagar-3 <br />
+                Raiya Road, Near Hanuman Madhi Chowk <br />
+                Rajkot - 360 007 Tele/Fax. : 0281-2572357 <br />
+              </p>
+            </div>
+            <div class="image">
+              <img src="./Images/rajkot.png" alt="" height="100%" width="100%" />
+            </div>
+          </div>
+          <div class="city second">
+            <div class="image">
+                <img src="./Images/shimla.jpg" alt="" height="100%" width="100%" />
+              </div>
+            <div class="details">
+              <p>
+                SHIMLA <br />
+                (Owned) <br />
+                Saligram Bhawan, Basement Floor <br />
+                Opposite SBI, Khalini, Shimla - 171 002 <br />
+                E-mail : ieteshimla@gmail.com, shimla@iete.org <br />
+              </p>
+            </div>
+            
+          </div>
+          <div class="city">
+            <div class="details">
+              <p>
+                THIRUVANANTHAPURAM <br />
+                (Owned) <br />
+                Pottakuzhy, Pattom PO, Thiruvananthapuram-695004 <br />
+                Tel. : 0471-2554727 Fax : 0471-2554727 <br />
+              </p>
+            </div>
+            <div class="image ">
+              <img src="./Images/thiruvananthapuram.jpg" alt="" height="100%" width="100%" />
+            </div>
+          </div>
+          <div class="city second">
+            <div class="image">
+                <img src="./Images/tirupati.jpg" alt="" height="100%" width="100%" />
+              </div>
+            <div class="details">
+              <p>
+                TIRUPATI <br />
+                (Owned) <br />
+                401 & 402, 4th Floor, AVR Complex <br />
+                Balaji Colony, Tirupati - 517 502 <br />
+              </p>
+            </div>
+            
+          </div>
+          <div class="city">
+            <div class="details">
+              <p>
+                VADODARA <br />
+                (Owned) <br />
+                501-506, Vrajshiddhi Tower, Raj Mahal Road <br />
+                Khanderao Market Char Rasta <br />
+                Vadodara - 390 001 <br />
+              </p>
+            </div>
+            <div class="image">
+              <img src="./Images/vadodara.jpg" alt="" height="100%" width="100%" />
+            </div>
+          </div>
+          <div class="city second">
+            <div class="image">
+                <img src="./Images/vizag.jpg" alt="" height="100%" width="100%" />
+              </div>
+            <div class="details">
+              <p>
+                VISAKHAPATNAM <br />
+                (Owned) <br />
+                IETE Building, Near ECE Department <br />
+                AU College of Engg., Visakhapatnam-530 003 <br />
+                Tel. : 0891-2844613 E-mail : iete.vizag@gmail.com <br />
+              </p>
+            </div>
+            
+          </div>
+
           <br />
           <br />
           <b>
@@ -738,44 +1107,28 @@
           </b>
         </div>
 
-        <div class="form">
-          <h1>GET IN TOUCH</h1>
-          <form name="form">
-            <input type="text" placeholder="Enter First Name" />
-            <input type="text" placeholder="Enter Last Name" />
-            <input type="text" placeholder="Enter Email" />
-            <input type="text" placeholder="Enter Mobile No." />
-            <select name="branch" id="branch">
-              <option value="">Select Nearest Branch</option>
-              <option value="Ahmedabad">Ahmedabad</option>
-              <option value="Bangalore">Bangalore</option>
-              <option value="Chandigarh">Chandigarh</option>
-              <option value="Chennai">Chennai</option>
-              <option value="Coimbatore">Coimbatore</option>
-              <option value="Delhi">Delhi</option>
-              <option value="Goa">Goa</option>
-              <option value="Hydrabad">Hydrabad</option>
-              <option value="Indore">Indore</option>
-              <option value="Jaipur">Jaipur</option>
-              <option value="Kolhapur">Kolhapur</option>
-              <option value="Kolkata">Kolkata</option>
-              <option value="Lucknow">Lucknow</option>
-              <option value="Mumbai">Mumbai</option>
-              <option value="Pune">Pune</option>
-              <option value="Vishakhapatnam">Vishakhapatnam</option>
-            </select>
-            <select name="location" id="">
-              <option value="">Preferred Destination</option>
-              <option value="Australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="ireland">Ireland</option>
-              <option value="newzealand">New Zealand</option>
-              <option value="Uk">UK</option>
-              <option value="USA">USA</option>
-            </select>
+        <div class="contactform">
+            <form>
+                <h2>Send Message</h2>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Full Name</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputBox">
+                    <textarea  required="required"></textarea>
+                    <span>Type your Message. . .</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" name="" value="Send" id="button">
+                </div>
 
-            <button type="submit">Submit</button>
-          </form>
+            </form>
+
+        </div>
         </div>
       </div>
 
@@ -800,14 +1153,28 @@
             <h2>Our Services</h2>
             <ul>
               <li><a href="./careerCounselling.html">Career Counselling</a></li>
-            <li><a href="./accomodationAssistance.html">Accommodation Assistance</a></li>
-            <li><a href="./educationCounselling.html">International Education Counselling</a></li>
-            <li><a href="./universityCourse.html">University and Course Selection</a></li>
-            <li><a href="./applicationGuidance.html">Application Guidance</a></li>
-            <li><a href="./visa.html">VISA Guidance</a></li>
-            <li><a href="./finance.html">Financial Assistance</a></li>
-            <li><a href="./deperture.html">Pre-Departure Service</a></li>
-            <li><a href="">Scholarship Assistance</a></li>
+              <li>
+                <a href="./accomodationAssistance.html"
+                  >Accommodation Assistance</a
+                >
+              </li>
+              <li>
+                <a href="./educationCounselling.html"
+                  >International Education Counselling</a
+                >
+              </li>
+              <li>
+                <a href="./universityCourse.html"
+                  >University and Course Selection</a
+                >
+              </li>
+              <li>
+                <a href="./applicationGuidance.html">Application Guidance</a>
+              </li>
+              <li><a href="./visa.html">VISA Guidance</a></li>
+              <li><a href="./finance.html">Financial Assistance</a></li>
+              <li><a href="./deperture.html">Pre-Departure Service</a></li>
+              <li><a href="">Scholarship Assistance</a></li>
             </ul>
           </div>
           <div class="footer-element">
