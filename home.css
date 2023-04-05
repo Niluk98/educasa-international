@@ -33,6 +33,7 @@ body{
 .contain nav .logo{
     position: relative;
     display: flex;
+    margin-left: 20px;
     width: 200px;
     height: 100%;
     background:transparent;
@@ -49,7 +50,7 @@ body{
 .contain nav ul li{
     display: inline-block;
     /* position: relative; */
-    padding: 15px;
+    padding: 10px;
     list-style: none;
     float: none;
     background: #01052c;
