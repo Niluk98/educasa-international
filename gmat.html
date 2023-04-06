@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GMAT</title>
+    <link rel="icon" href="./Images/logo 1-final.jpeg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f669f9a9ba.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", sans-serif;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+      }
+      .contain {
+        width: 100%;
+      }
+
+      .contain nav {
+        position: relative;
+        background: #01052c;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        /* background-color: red; */
+      }
+      .contain nav .logo {
+        position: relative;
+        display: flex;
+        margin-left: 20px;
+        width: 200px;
+        height: 100%;
+        background: transparent;
+        justify-content: center;
+        align-items: center;
+      }
+      #educasa {
+        width: 100%;
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      .contain nav ul li {
+        display: inline-block;
+        /* position: relative; */
+        padding: 10px;
+        list-style: none;
+        float: none;
+        background: #01052c;
+      }
+      .contain nav ul li a {
+        display: block;
+        padding: 0 5px;
+        /* line-height: 60px; */
+        font-size: 18px;
+        text-decoration: none;
+        color: #f7f7f7;
+      }
+      .contain nav ul ul {
+        position: absolute;
+        top: 10px;
+        /* background: #01052c; */
+        display: none;
+        z-index: 1;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        opacity: 0.9;
+        transition: 0.5s;
+      }
+      .contain nav ul ul li {
+        position: relative;
+        display: list-item;
+        float: none;
+        width: 300px;
+        padding: 10px;
+        /* height: 60px; */
+        /* border-bottom: 1px solid #f7f7f7; */
+      }
+      .contain nav ul li:hover ul {
+        display: block;
+      }
+      .contain nav .icon{
+        padding-bottom: 10px;
+        position: fixed;
+        top: 4px;
+        right: 0%;
+        display: none;
+        color: #f7f7f7;
+        font-size: 2em;
+        z-index: 1;
+        display: none;
+        background-color: #01052c;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        border-radius: 30%;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+    }
+
+      .contain nav ul li:hover > ul {
+        display: block;
+      }
+      .contain nav ul li a:hover {
+        /* font-size: 1.3em; */
+        color: #4f6bf2;
+      }
+      .contain nav ul ul {
+        position: absolute;
+        top: 60px;
+        list-style: none;
+        background: #01052c;
+      }
+      .sidebar {
+        display: none;
+      }
+      .sidebar1 {
+        display: none;
+      }
+      .sidebar2 {
+        display: none;
+      }
+      .sidebar3 {
+        display: none;
+      }
+      .sidebar4 {
+        display: none;
+      }
+      .header {
+        height: 600px;
+        position: relative;
+      }
+      .header img {
+        filter: brightness(40%);
+      }
+      .header h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #f7f7f7;
+        font-size: 60px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .bottom {
+        display: flex;
+        background: #edeeff;
+        font-size: 20px;
+        letter-spacing: 1px;
+      }
+      .bottom .text {
+        flex: 1;
+        /* margin: 20px; */
+        padding: 70px 30px;
+        background: #edeeff;
+      }
+
+      .contain .bottom .form {
+        position: relative;
+        margin-left: 80px;
+        flex: 1;
+        margin-right: 40px;
+        margin-top: 70px;
+        width: 70%;
+        height: 700px;
+        opacity: 0.8;
+        background-color: #f7f7f7;
+        /* right: 200px; */
+        /* top: 80px; */
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        text-align: center;
+      }
+      .contain .bottom .form h1 {
+        color: black;
+        font-size: 3em;
+        font-weight: 400;
+        margin-bottom: 50px;
+      }
+
+      .contain .bottom .form input {
+        margin-left: 0px;
+        width: 100%;
+        /* background: transparent; */
+        height: 40px;
+        border: none;
+        border-bottom: 2px solid black;
+        margin-bottom: 30px;
+        color: black;
+        font-weight: 600;
+      }
+      .contain .bottom .form button {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background: #4f6bf2;
+        opacity: 1;
+        color: #fff;
+        font-size: 1em;
+        transition: 0.5s ease;
+        cursor: pointer;
+        font-weight: 600;
+        /* border-radius: 15%; */
+        overflow: hidden;
+      }
+      .contain .bottom .form select {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 30px;
+        /* margin: 10px; */
+        /* padding-top: 5px; */
+        background: transparent;
+        color: black;
+        font-weight: 600;
+        border: none;
+        border-bottom: 2px solid black;
+      }
+      .contain .bottom .form select option {
+        background-color: rgb(169, 125, 44);
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #fff;
+      }
+
+      .contain .bottom .form button:hover {
+        color: black;
+        background-color: orange;
+      }
+      .contain .bottom .form p {
+        margin-left: 40px;
+        color: #fff;
+      }
+      .contain .bottom .form span {
+        position: relative;
+        margin-left: 30px;
+        font-weight: 600;
+        color: orange;
+        /* background-color: aqua; */
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .contain .bottom .form span:hover {
+        color: orange;
+        font-size: 1.2em;
+        opacity: 1;
+      }
+      
+.footer{
+    max-width: 100%;
+    min-height: 120vh;
+    background: #01052c;
+    padding-top: 10px;
+    
+    /* align-items: center; */
+
+}
+.footer .image{
+    display: flex;
+    margin: 20px;
+    width: 300px;
+    height: 150px;
+    align-items: center;
+}
+#logo{
+    height: 80px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+.footer .footer-element{
+    margin-top: 5%;
+    width: 300px;
+    min-height: 400px;
+    /* background: #f7f7f7; */
+    letter-spacing: 0.5px;
+}
+.footer .footer-element ul li{
+    list-style: none;
+    padding: 10px 0;
+}
+.footer .footer-element h2{
+    color: #5a6484;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    /* letter-spacing: 0.5px; */
+    
+}
+.footer .footer-element ul li a{
+    text-decoration: none;
+    color: #FEFEFE;
+    transition: 0.5s;
+    font-size: 18px;
+}
+.footer .footer-element ul li:hover a{
+    color: #4F6BF2;
+}
+
+.footer .footer-element h3{
+    color: #FEFEFE;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.footer .footer-element p{
+    color: #FEFEFE;
+    line-height: 30px;
+
+}
+.end{
+    width: 100%;
+    min-height: 50px;
+    background: #010521;
+    color: #f7f7f7;
+    padding: 20px ;
+    text-align: center;
+}
+.end h2{
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+@media screen and (max-width:1068px) {
+    nav ul{
+    display: none;
+}
+.contain .header h1{
+   font-size: 30px;
+}
+.contain .header{
+    height: 400px;
+}
+    .sidebar ul{
+        display: block;
+    }
+    .contain nav .icon{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        /* justify-items: center; */
+        padding: 25px;
+    }
+    
+    .active{
+        display: block;
+    }
+    .contain .bottom{
+        display: block;
+    }
+    
+    .sidebar {
+        display: block;
+    position: fixed;
+    width: 300px;
+    /* min-height:300px ; */
+    /* position: sticky; */
+    top: 90px;
+    right: 0;
+    z-index: 2;
+    
+    transition:  1s;
+    background: #01052c;
+    
+    padding: 0;
+    /* overflow-x: hidden; */
+    transform: translateX(300px);
+    padding: 10px 10px;
+        
+    }
+    .sidebar a{
+        position: relative;
+        display: block;
+        text-decoration:  none;
+        padding: 10px 10px;
+        color: #f7f7f7;
+        font-size: 1.5em;
+        transition: 0.5s;
+        width: 100%;
+        /* text-align: center; */
+    
+    }
+    .sidebar a:hover{
+        color:#4F6BF2
+    }
+
+    .sidebar1 {
+        display: block;
+    position: fixed;
+    width: 300px;
+    /* min-height:300px ; */
+    /* position: sticky; */
+    top: 90px;
+    right: 0;
+    z-index: 2;
+    
+    transition:  1s;
+    background: #01052c;
+    
+    padding: 0;
+    /* overflow-x: hidden; */
+    transform: translateX(300px);
+    padding: 10px 10px;
+        
+    }
+    
+    
+
+    .sidebar1 a{
+        position: relative;
+        display: block;
+        text-decoration:  none;
+        padding: 10px 10px;
+        color: #f7f7f7;
+        font-size: 1.5em;
+        transition: 0.5s;
+        width: 100%;
+        /* text-align: center; */
+    
+    }
+    .sidebar1 a:hover{
+        color:#4F6BF2
+    }
+     
+    
+    .sidebar2 {
+        display: block;
+    position: fixed;
+    width: 300px;
+    /* min-height:300px ; */
+    /* position: sticky; */
+    top: 90px;
+    right: 0;
+    z-index: 2;
+    
+    transition:  1s;
+    background: #01052c;
+    
+    padding: 0;
+    /* overflow-x: hidden; */
+    transform: translateX(300px);
+    padding: 10px 10px;
+        
+    }
+    
+    .contain .bottom .form{
+        width: 100%;
+        margin: 0px;
+        min-height: 160vh;
+    }
+
+    .sidebar2 a{
+        position: relative;
+        display: block;
+        text-decoration:  none;
+        padding: 10px 10px;
+        color: #f7f7f7;
+        font-size: 1.5em;
+        transition: 0.5s;
+        width: 100%;
+        /* text-align: center; */
+    
+    }
+    .sidebar2 a:hover{
+        color:#4F6BF2
+    }
+    
+    .sidebar3 {
+        display: block;
+    position: fixed;
+    width: 300px;
+    /* min-height:300px ; */
+    /* position: sticky; */
+    top: 90px;
+    right: 0;
+    z-index: 2;
+    
+    transition:  1s;
+    background: #01052c;
+    
+    padding: 0;
+    /* overflow-x: hidden; */
+    transform: translateX(300px);
+    padding: 10px 10px;
+        
+    }
+    
+    
+
+    .sidebar3 a{
+        position: relative;
+        display: block;
+        text-decoration:  none;
+        padding: 10px 10px;
+        color: #f7f7f7;
+        font-size: 1.5em;
+        transition: 0.5s;
+        width: 100%;
+        /* text-align: center; */
+    
+    }
+    .sidebar3 a:hover{
+        color:#4F6BF2
+    }
+    .sidebar4 {
+        display: block;
+    position: fixed;
+    width: 300px;
+    /* min-height:300px ; */
+    /* position: sticky; */
+    top: 90px;
+    right: 0;
+    z-index: 2;
+    
+    transition:  1s;
+    background: #01052c;
+    
+    padding: 0;
+    /* overflow-x: hidden; */
+    transform: translateX(300px);
+    padding: 10px 10px;
+        
+    }
+    
+    
+
+    .sidebar4 a{
+        position: relative;
+        display: block;
+        text-decoration:  none;
+        padding: 10px 10px;
+        color: #f7f7f7;
+        font-size: 1.5em;
+        transition: 0.5s;
+        width: 100%;
+        /* text-align: center; */
+    
+    }
+    .sidebar4 a:hover{
+        color:#4F6BF2
+    }
+
+     .active1 {
+        transform: translateX(00px);
+        
+    }
+     
+    footer{
+        display: block;
+        padding: 50px 20px;
+    }
+    .footer .image{
+        width: 220px;
+        margin: 20px;
+    }
+    #logo{
+        width: 180px;
+        height: 40px;
+    }
+    
+    .footer .footer-element{
+        margin-top: 30px;
+        min-height: 250px;
+        
+    }
+    .footer .footer-element h2{
+        color: #5a6484;
+        margin-bottom: 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+        /* letter-spacing: 0.5px; */
+        
+    }
+    .footer .footer-element ul li a{
+        text-decoration: none;
+        color: #FEFEFE;
+        transition: 0.5s;
+        font-size: 12px;
+    }
+    .footer .footer-element h3{
+        font-size: 16px;
+    }
+    .footer .footer-element p{
+        font-size: 12px;
+    }
+    .end h2{
+        font-size: 12px;
+    }
+    
+
+    
+}
+    </style>
+  </head>
+  <body>
+    <div class="contain">
+      <nav>
+        <div class="logo">
+          <img
+            src="./Images/logo 1-final.jpeg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+          <img
+            src="./Images/logo 2-final.jpeg"
+            alt=""
+            width="100%"
+            height="100%"
+            id="educasa"
+          />
+        </div>
+
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+
+          <li>
+            <a href="./studyabroad.html" class="Study Abroad">Study Abroad</a>
+
+            
+          </li>
+          <li>
+            <a href="#">Our Services</a>
+            <ul>
+              <li><a href="./careerCounselling.html">Career Counselling</a></li>
+            <li><a href="./accomodationAssistance.html">Accommodation Assistance</a></li>
+            <li><a href="./internationaleducation.html">International Education Counselling</a></li>
+            <li><a href="./universityCourse.html">University and Course Selection</a></li>
+            <li><a href="./applicationGuidance.html">Application Guidance</a></li>
+            <li><a href="./visa.html">VISA Guidance</a></li>
+            <li><a href="./finance.html">Financial Assistance</a></li>
+            <li><a href="./deperture.html">Pre-Departure Service</a></li>
+            <li><a href="./scholarship.html">Scholarship Assistance</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Test Preparation</a>
+            <ul>
+              <li><a href="#">TOEFL-IELTS-PTS</a></li>
+              <li><a href="#">GRE</a></li>
+              <li><a href="#">GMAT</a></li>
+              <li><a href="#">Training at EDUCASA</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Study Destination</a>
+            <ul>
+              <li><a href="#">Study in US</a></li>
+              <li><a href="#">Study in Canada</a></li>
+              <li><a href="#">Study in Australia</a></li>
+              <li><a href="#">Study in UK</a></li>
+              <li><a href="#">Study in Ireland</a></li>
+              <li><a href="#">Study in New Zealand</a></li>
+            </ul>
+          </li>
+          <li><a href="./parentalguide.html">Parental Guide</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="sidebar" id="sidebar">
+          <div class="content">
+            <a href="./index.html">Home</a>
+            <a href="./studyabroad.html" >Study Abroad</a>
+            <a href="#" onclick="display(2)">Our Services</a>
+            <a href="#" onclick="display(3)">Test Preparation</a>
+            <a href="#" onclick="display(4)">Study Destination</a>
+            <a href="./parentalguide.html">Parental Guide</a>
+            <a href="./contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- <div class="sidebar1" id="sidebar1">
+          <div class="content">
+            <a href="#">How to select your Study Location</a>
+            <a href="#">Advantages of International Study</a>
+            <a href="#">Study Abroad Admissions</a>
+            <a href="#">Parent Guide</a>
+          </div>
+        </div> -->
+        <div class="sidebar2" id="sidebar2">
+          <div class="content">
+            <a href="./careerCounselling.html">Career Counselling</a>
+            <a href="./accomodationAssistance.html">Accommodation Assistance</a>
+            <a href="./universityCourse.html">University and Course Selection</a>
+            <a href="./visa.html">Visa Assistance</a>
+            <a href="./applicationGuidance.html">Application Guidance</a>
+            <a href="./finance.html">Financial Assistance</a>
+            <a href="./deperture.html">Pre Departure Assistance</a>
+            <a href="./internationaleducation.html">International Education Counselling</a>
+            <a href="./scholarship.html">Scholarship Assistance</a>
+          </div>
+        </div>
+        <div class="sidebar3" id="sidebar3">
+          <div class="content">
+            <a href="#">TOEFL-IELTS-PTS</a>
+            <a href="#">GRE</a>
+            <a href="#">GMAT</a>
+            <a href="#">Training at EDUCASA</a>
+          </div>
+        </div>
+        <div class="sidebar4" id="sidebar4">
+          <div class="content">
+            <a href="#">Study in US</a>
+            <a href="#">Study in Canada</a>
+            <a href="#">Study in Australia</a>
+            <a href="#">Study in UK</a>
+            <a href="#">Study in Ireland</a>
+            <a href="#">Study in New Zealand</a>
+          </div>
+        </div>
+
+        <div class="icon">
+          <i class="fa-solid fa-bars fa-xs" id="icon" onclick="display(0)"></i>
+        </div>
+      </nav>
+
+      <div class="header">
+        <img src="./Images/gmat.jpg" alt="" width="100%" height="100%" />
+        <h1>GMAT</h1>
+      </div>
+      <div class="bottom">
+        <div class="text">
+           <b> WHAT IS GMAT - THE GRADUATE MANAGEMENT ADMISSION TEST?</b> <br> <br>
+The GMAT Test stands for Graduate Management Admission Test. It is a standardized assessment that helps business schools assess the qualifications of applicants for advanced study in business and management. Schools use the test as one predictor of academic performance in an MBA program or in other graduate management programs. GMAT is accepted by countries like USA, Canada, Singapore etc. It is the most commonly accepted test for Graduate Management (MBA) programs worldwide by most Universities and Business Schools.
+
+The GMAT exam measures basic verbal, mathematical, and analytical writing skills that you have developed over a long period of time in your education and work. It does NOT measure your knowledge of business, your job skills, specific content in your undergraduate or first university course work, your abilities in any other specific subject area, or subjective qualities—such as motivation, creativity, and interpersonal skills.
+          <br />
+          <br />
+          <b>
+            Please fill out the adjacent form to schedule your free counselling
+            appointment.
+          </b>
+        </div>
+
+        <div class="form">
+          <h1>GET IN TOUCH</h1>
+          <form name="form">
+            <input type="text" placeholder="Enter First Name" />
+            <input type="text" placeholder="Enter Last Name" />
+            <input type="text" placeholder="Enter Email" />
+            <input type="text" placeholder="Enter Mobile No." />
+            <select name="branch" id="branch">
+              <option value="">Select Nearest Branch</option>
+              <option value="Ahmedabad">Ahmedabad</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Coimbatore">Coimbatore</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Goa">Goa</option>
+              <option value="Hydrabad">Hydrabad</option>
+              <option value="Indore">Indore</option>
+              <option value="Jaipur">Jaipur</option>
+              <option value="Kolhapur">Kolhapur</option>
+              <option value="Kolkata">Kolkata</option>
+              <option value="Lucknow">Lucknow</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Pune">Pune</option>
+              <option value="Vishakhapatnam">Vishakhapatnam</option>
+            </select>
+            <select name="location" id="">
+              <option value="">Preferred Destination</option>
+              <option value="Australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="ireland">Ireland</option>
+              <option value="newzealand">New Zealand</option>
+              <option value="Uk">UK</option>
+              <option value="USA">USA</option>
+            </select>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      
+    <div class="footer">
+        <div class="image">
+          <img src="./Images/logo 1-final.jpeg" alt="" width="100%" height="100%" />
+          <img src="./Images/logo 2-final.jpeg" alt="" width="100%" height="100%" id="logo" />
+        </div>
+        <footer>
+          <div class="footer-element">
+            <h2>Our Services</h2>
+            <ul>
+              <li><a href="./careerCounselling.html">Career Counselling</a></li>
+            <li><a href="./accomodationAssistance.html">Accommodation Assistance</a></li>
+            <li><a href="./internationaleducation.html">International Education Counselling</a></li>
+            <li><a href="./universityCourse.html">University and Course Selection</a></li>
+            <li><a href="./applicationGuidance.html">Application Guidance</a></li>
+            <li><a href="./visa.html">VISA Guidance</a></li>
+            <li><a href="./finance.html">Financial Assistance</a></li>
+            <li><a href="./deperture.html">Pre-Departure Service</a></li>
+            <li><a href="./scholarship.html">Scholarship Assistance</a></li>
+            </ul>
+          </div>
+          <div class="footer-element">
+            <h2>Study Destinations</h2>
+            <ul>
+              <li><a href="">Study in US</a></li>
+              <li><a href="">Study in UK</a></li>
+              <li><a href="">Study in Australia</a></li>
+              <li><a href="">Study in Canada</a></li>
+              <li><a href="">Study in Ireland</a></li>
+              <li><a href="">Study in New Zealand</a></li>
+            </ul>
+          </div>
+          <div class="footer-element">
+            <h2>Contact Us</h2>
+            <h3>Educasa <br> International</h3>
+            <p>
+              Mekhri Circle,Behind CBI Office,<br />
+              Bellary Road, Ganganagar Extension, <br />
+              Bengaluru 560036 <br />
+              Mobile No. 9380293380
+            </p>
+          </div>
+        </footer>
+      </div>
+      <div class="end">
+        <h2>Developed By DigiLark Solutions</h2>
+      </div>
+    </div>
+    </body>
+  
+    <!-- navbar javascript -->
+  
+    <script>
+      let menu1 = document.getElementById("sidebar");
+      let menu2 = document.getElementById("sidebar1");
+      let menu3 = document.getElementById("sidebar2");
+      let menu4 = document.getElementById("sidebar3");
+      let menu5 = document.getElementById("sidebar4");
+      let is_open = false;
+  
+      function display(val) {
+        // let name="menu"+val;
+        if (val == 0 && is_open == false) {
+          menu1.classList.toggle("active1");
+          is_open = true;
+        } else if (val == 0 && is_open == true) {
+          menu3.classList.remove("active1");
+          menu2.classList.remove("active1");
+          menu1.classList.add("active1");
+          menu4.classList.remove("active1");
+          menu5.classList.remove("active1");
+          is_open = false;
+        } else if (val == 1) {
+          menu2.classList.toggle("active1");
+          menu1.classList.toggle("active1");
+          is_open = true;
+        } else if (val == 2) {
+          menu3.classList.toggle("active1");
+          menu1.classList.toggle("active1");
+        } else if (val == 3) {
+          menu4.classList.toggle("active1");
+          menu1.classList.toggle("active1");
+        } else {
+          menu5.classList.toggle("active1");
+          menu1.classList.toggle("active1");
+        }
+      }
+     
+    </script>
+    
+  
+</html>
