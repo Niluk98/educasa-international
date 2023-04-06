@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parental Guide</title>
+    <title>TOEFL-IELTS-PTS</title>
     <link rel="icon" href="./Images/logo 1-final.jpeg" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
@@ -31,7 +31,6 @@
 
       .contain nav {
         position: relative;
-
         background: #01052c;
         display: flex;
         justify-content: space-around;
@@ -150,23 +149,13 @@
       .header img {
         filter: brightness(40%);
       }
-      .city {
-        padding: 30px 20px;
-        margin: 10px 0;
-      }
-      .city h3 {
-        margin-bottom: 20px;
-      }
-      .second {
-        background: #cdcff5;
-      }
       .header h1 {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: #f7f7f7;
-        font-size: 50px;
+        font-size: 60px;
         letter-spacing: 2px;
         text-transform: uppercase;
       }
@@ -181,6 +170,7 @@
         /* margin: 20px; */
         padding: 70px 30px;
         background: #edeeff;
+        display: none;
       }
 
       .contain .bottom .form {
@@ -273,6 +263,60 @@
         color: orange;
         font-size: 1.2em;
         opacity: 1;
+      }
+      .bottom-head {
+        display: flex;
+        width: 100%;
+        background: #edeeff;
+        height: 100px;
+      }
+      .bottom-head a {
+        margin: 50px 50px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .exam {
+        display: block;
+        border-bottom: 5px solid #4f6bf2;
+      }
+      .text2 {
+        flex: 1;
+        /* margin: 20px; */
+        padding: 70px 30px;
+        background: #edeeff;
+        display: none;
+      }
+      table {
+        margin: 50px 0;
+      }
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      table td {
+        padding: 10px;
+      }
+      .text1 {
+        flex: 1;
+        /* margin: 20px; */
+        padding: 70px 30px;
+        background: #edeeff;
+        display: none;
+        transition: 0.5s;
+      }
+      .text3 {
+        flex: 1;
+        /* margin: 20px; */
+        padding: 70px 30px;
+        background: #edeeff;
+        display: none;
+      }
+      .active2 {
+        display: block;
       }
 
       .footer {
@@ -622,9 +666,6 @@
           <li>
             <a href="./studyabroad.html" class="Study Abroad">Study Abroad</a>
           </li>
-          <!-- <li>
-            <a href="#" class="Parental Guide">Parental Guide</a>
-          </li> -->
           <li>
             <a href="#">Our Services</a>
             <ul>
@@ -673,26 +714,30 @@
               <li><a href="#">Study in New Zealand</a></li>
             </ul>
           </li>
-          <li>
-            <a href="./parentalguide.html" class="Parental Guide">Parental Guide</a>
-          </li>
+          <li><a href="./parentalguide.html">Parental Guide</a></li>
           <li><a href="./contact.html">Contact Us</a></li>
         </ul>
 
         <div class="sidebar" id="sidebar">
           <div class="content">
             <a href="./index.html">Home</a>
-            <a href="./studyabroad.html" >Study Abroad</a>
-            <a href="#!" onclick="display(2)">Our Services</a>
-            <a href="#!" onclick="display(3)">Test Preparation</a>
-            <a href="#!" onclick="display(4)">Study Destination</a>
-            <a href="./parentalguide.html">Parent Guide</a>
+            <a href="./studyabroad.html">Study Abroad</a>
+            <a href="#" onclick="display(2)">Our Services</a>
+            <a href="#" onclick="display(3)">Test Preparation</a>
+            <a href="#" onclick="display(4)">Study Destination</a>
+            <a href="./parentalguide.html">Parental Guide</a>
             <a href="./contact.html">Contact Us</a>
           </div>
         </div>
 
-        
-        
+        <!-- <div class="sidebar1" id="sidebar1">
+          <div class="content">
+            <a href="#">How to select your Study Location</a>
+            <a href="#">Advantages of International Study</a>
+            <a href="#">Study Abroad Admissions</a>
+            <a href="#">Parent Guide</a>
+          </div>
+        </div> -->
         <div class="sidebar2" id="sidebar2">
           <div class="content">
             <a href="./careerCounselling.html">Career Counselling</a>
@@ -707,6 +752,7 @@
             <a href="./internationaleducation.html"
               >International Education Counselling</a
             >
+            <a href="./scholarship.html">Scholarship Assistance</a>
           </div>
         </div>
         <div class="sidebar3" id="sidebar3">
@@ -734,129 +780,150 @@
       </nav>
 
       <div class="header">
-        <img
-          src="./Images/parent-guide.jpg"
-          alt=""
-          width="100%"
-          height="100%"
-        />
-        <h1>Parental Guide</h1>
+        <img src="./Images/ielts.jpg" alt="" width="100%" height="100%" />
+        <h1>TOEFL / IELTS / PTS</h1>
+      </div>
+      <div class="bottom-head">
+        <a href="#!" onclick="ope(1)"><h1 class="exam" id="1">TOEFL</h1></a>
+        <a href="#!" onclick="ope(2)"> <h1 id="2">IELTS</h1></a>
+        <a href="#!" onclick="ope(3)"><h1 id="3">PTS</h1></a>
       </div>
       <div class="bottom">
-        <div class="text">
-          <p>
-            One of the most significant and courageous choices you will ever
-            make, parents, is this. We comprehend that letting your child leave
-            the nest is not an easy option. <br />
-            <br />
+        <div class="text1 active2" id="text1">
+          The Test of English as a Foreign Language <sup>TM</sup> (TOEFL)
+          measures the ability of nonnative speakers of English to use and
+          understand English as it is spoken, written, and heard in college and
+          university settings. The TOEFL tests all four language skills that are
+          important for effective communication: Speaking, Listening, Reading,
+          and Writing. The test helps students demonstrate that they have the
+          English skills needed for success. TOEFL also emphasizes integrated
+          skills and provides better information to institutions about students'
+          ability to communicate in an academic setting and their readiness for
+          academic coursework. TOEFL will be needed for Education in USA, UK,
+          Canada, and New Zealand. <br />
+          <br />
 
-            It is your duty to assist your child in making this choice and to
-            participate in the entire process. <br />
-            <br />
+          The TOEFL test is developed and administered by the US-based
+          "Educational Testing Service" (ETS). This implies that ETS sets the
+          questions, conducts the test, and sends each examinee the score
+          report. For the conduct of the test, ETS has appointed Testing
+          Agencies in various countries, which act as franchisee for ETS. In
+          India, this agency is the "Prometric Testing Services Private Limites"
+          which administers the test at various centers across India. <br />
 
-            As a parent, your responsibility is to comprehend your child. In
-            order to ensure that your children make the proper decisions in
-            their daily lives, you as their parent need to be an active part of
-            their dynamic strategy. <br />
-            <br />
-          </p>
+          Computer based TOEFL test is held all-round-the-year. Unlike other
+          exams, you can choose your own date and time for taking the TOEFL
+          test. September to December is the high season for TOEFL test, so in
+          case you intend to take the test during this period, you need to
+          register very early (say 90 days in advance) to get a date of your
+          choice. Otherwise, registering at least three days in advance is
+          mandatory. The test lasts roughly four hours. <br />
 
-          <div class="city">
-            <h3>Discuss the objectives Transparently</h3>
+          Further details are available on
+          <a href="www.toefl.org">www.toefl.org</a> . You can register for the
+          test through the same site.
+          <br />
+          <br />
+          <b>
+            Please fill out the adjacent form to schedule your free counselling
+            appointment.
+          </b>
+        </div>
+        <div class="text2" id="text2">
+          The International English Language Testing System, or IELTS, as it is
+          popularly called, is an English Language proficiency test that is
+          required to be taken by non-native students so as to study in
+          countries where the medium of instruction is English. IELTS is
+          accepted by Universities in USA, UK, Australia, New Zealand and
+          Canada. It has become a mandatory test for study in Australia now. All
+          other study destinations require one to appear for either the ToEFL or
+          the IELTS. <br />
+          <br />
 
-            <p>
-              Recognize your child's urge to visit another nation, whether it is
-              due to personal or professional reasons. Understanding exactly
-              what your child seeks out in life can help you provide them with
-              them.
-            </p>
-          </div>
-          <div class="city second">
-            <h3>Do More Research</h3>
+          <b>
+            THE IELTS TESTS ALL FOUR LANGUAGE SKILLS THAT ARE IMPORTANT FOR
+            EFFECTIVE COMMUNICATION: SPEAKING, LISTENING, READING, AND WRITING.
+            THE STRUCTURE OF THE IELTS IS AS FOLLOWS:
+          </b>
+          <table>
+            <tr>
+              <th>Section</th>
+              <th>NTime Allocated</th>
+              <th>Scoring Sale</th>
 
-            <p>
-              It is your responsibility as a parent to research the courses your
-              child is interested in, the university they have been talking
-              about, and the lifestyle they would thrive in.
-            </p>
-          </div>
-          <div class="city">
-            <h3>Consider Your Challenges</h3>
-
-            <p>
-              Get in touch with family members whose children have travelled
-              abroad. Find out more about the challenges you'll undoubtedly
-              encounter and decide how to handle them.
-            </p>
-          </div>
-          <div class="city second">
-            <h3>Establish A Budget</h3>
-
-            <p>
-              You can make the best decision for your family by considering the
-              costs of moving your kids to a foreign nation. But, you need
-              factor in far more charges when sending your child to college in
-              your financial plan than just the cost of school alone.
-            </p>
-          </div>
-
-          <div class="city">
-            <h3>Discuss the objectives Transparently</h3>
-
-            <p>
-              Recognize your child's urge to visit another nation, whether it is
-              due to personal or professional reasons. Understanding exactly
-              what your child seeks out in life can help you provide them with
-              them.
-            </p>
-          </div>
-          <div class="city second">
-            <h3>Form A Clear Arrangement</h3>
-
-            <p>
-              After you fully get what goes into sending your child to a foreign
-              nation, take into account all factors, such as the choice of
-              courses and colleges, the cost, the visa, and so on.
-            </p>
-          </div>
-
-          <div class="city ">
-            <h3>Have A Comprehensive Health Examination Performed</h3>
-
-            <p>
-              Make sure your child has undergone a thorough general physical
-              check-up and dental exam before departing for study abroad (if
-              relevant). Get everyone some weapo ns and the appropriate help.
-              Get your child a spare pair of their prescribed glasses or
-              contacts if they wear either. If your child is prescribed a drug,
-              speak with their primary care physician. They can provide you the
-              names of substitute pharmaceuticals that you can purchase in the
-              nation of your choice.
-            </p>
-          </div>
-          <div class="city second">
-            <h3>Travel Safety Is Crucial!</h3>
-
-            <p>
-              Sending your child, a great distance away might be understandably
-              unsettling, which is why it is crucial to ensure their mobility
-              security. You must consider travel insurance! Before you depart,
-              make sure your child is safe.
-            </p>
-          </div>
-          <div class="city">
-            <h3>Maintain Regular Contact</h3>
-
-            <p>
-              You can communicate with your child via a variety of platforms,
-              including email, Skype, Facebook, Viber, WhatsApp, and others.
-              Having said that, it's crucial to avoid utilising them all at
-              once. Let your child alone. Do not immediately freeze when your
-              child is unable to respond to your calls or messages. That can be
-              due to a packed schedule, poor Wi-Fi reception, or shifting time
-              zones.
-            </p>
-          </div>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Reading</td>
+              <td>60 Minutes</td>
+              <td>0-9</td>
+              <td>
+                Reading has 3 passages and 40 items (questions). Each item is
+                worth one mark.
+              </td>
+            </tr>
+            <tr>
+              <td>Writing</td>
+              <td>60 Minutes</td>
+              <td>0-9</td>
+              <td>
+                It consists of 2 tasks (Writing Task 1 and Writing Task 2) and
+                candidates must answer BOTH tasks.
+              </td>
+            </tr>
+            <tr>
+              <td>Listening</td>
+              <td>40 Minutes</td>
+              <td>0-9</td>
+              <td>
+                IELTS Listening has four sections, each with 10 items (or
+                questions). Each item is worth one mark.
+              </td>
+            </tr>
+            <tr>
+              <td>Speaking</td>
+              <td>11-14 Minutes</td>
+              <td>0-9</td>
+              <td>
+                IELTS Listening has four sections, each with 10 items (or
+                questions). Each item is worth one mark.
+              </td>
+            </tr>
+          </table>
+          IELTS is conducted in India by British Council. We are now a Member of
+          the British Council IELTS Partnership Programme and the IELTS
+          Registration Centre for British Council. You can visit us and register
+          at no extra cost. The registration fee for IELTS is Rs. 9300. The
+          detailed information about registering for the IELTS can be found at
+           <a href="www.britishcouncil.org">www.britishcouncil.org</a> . IELTS is offered on specific days of the year.
+          One may access the whole schedule which can vary depending on the
+          country by following the given link <a href="www.ielts.org">www.ielts.org</a>  or by contacting us.
+          IELTS can be taken unlimited number of times. IELTS score will be
+          valid for 2 years after from the date the test was taken.
+          <br />
+          <br />
+          <b>
+            Please fill out the adjacent form to schedule your free counselling
+            appointment.
+          </b>
+        </div>
+        <div class="text3" id="text3">
+           <b>What is PTS?</b>  <br> <br>
+            The Progress Test in Science (PTS) provides a reliable assessment of students’ attainment in science. PTS measures students’ knowledge and understanding of science, as well as their application of this knowledge and understanding. Their ability to work scientifically is also assessed. <br> <br>
+            <ul type="square" >
+                <li>Assesses students’ knowledge, understanding and application in science</li>
+                <li>Tracks progress at individual and cohort level
+                </li>
+                <li>Indicates possible gaps in learning</li>
+                <li>Standardised on a large sample of students, with benchmarks verified each year based on analysis of over half a million students across all tests</li>
+                <li>Two suites of tests allowing for greater flexibility and choice</li>
+            </ul>
+          <br />
+          <br />
+          <b>
+            Please fill out the adjacent form to schedule your free counselling
+            appointment.
+          </b>
         </div>
 
         <div class="form">
@@ -1014,13 +1081,30 @@
         menu1.classList.toggle("active1");
       }
     }
-    // function display(){
-    //   menu3.classList.remove("active1");
-    //     menu2.classList.remove("active1");
-    //     menu1.classList.remove("active1");
-    //     menu4.classList.remove("active1");
-    //     menu5.classList.remove("active1");
-
-    // }
+    function ope(va) {
+      if (va == 2) {
+        document.getElementById("text2").classList.add("active2");
+        document.getElementById("text1").classList.remove("active2");
+        document.getElementById("text3").classList.remove("active2");
+        document.getElementById("1").classList.remove("exam");
+        document.getElementById("2").classList.add("exam");
+        document.getElementById("3").classList.remove("exam");
+        console.log("done");
+      } else if (va == 3) {
+        document.getElementById("text3").classList.add("active2");
+        document.getElementById("text1").classList.remove("active2");
+        document.getElementById("text2").classList.remove("active2");
+        document.getElementById("1").classList.remove("exam");
+        document.getElementById("3").classList.add("exam");
+        document.getElementById("2").classList.remove("exam");
+      } else if (va == 1) {
+        document.getElementById("text1").classList.add("active2");
+        document.getElementById("text3").classList.remove("active2");
+        document.getElementById("text2").classList.remove("active2");
+        document.getElementById("3").classList.remove("exam");
+        document.getElementById("1").classList.add("exam");
+        document.getElementById("2").classList.remove("exam");
+      }
+    }
   </script>
 </html>
