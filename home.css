@@ -474,7 +474,7 @@ body{
 .footer .image{
     display: flex;
     margin: 20px;
-    width: 300px;
+    width: 150px;
     height: 150px;
     align-items: center;
 }
@@ -1001,7 +1001,8 @@ footer{
         padding: 50px 20px;
     }
     .footer .image{
-        width: 220px;
+        width: 120px;
+        height: 100px;
         margin: 20px;
     }
     #logo{
