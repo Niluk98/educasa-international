@@ -868,13 +868,14 @@ footer{
     .contain nav .icon{
         padding-bottom: 10px;
         position: fixed;
-        top: 5px;
+        top: 70px;
         right: 0%;
         display: none;
         color: #f7f7f7;
         font-size: 2em;
         z-index: 1;
         display: none;
+        /* background: transparent; */
         background-color: #01052c;
         align-items: center;
         justify-items: center;
@@ -883,7 +884,8 @@ footer{
         height: 50px;
         width: 50px;
         cursor: pointer;
-    }
+    } 
+    
      
     
     
@@ -911,6 +913,7 @@ footer{
     .active{
         display: block;
     }
+    
     
     .contain .bottom{
         display: block;
